@@ -45,23 +45,27 @@ function cursorAnimation() {
 }
 cursorAnimation();
 
-//* nav magnet effect
-Shery.makeMagnet("nav ul li,svg", {});
+//*Page-1
+function page1() {
+  //* nav magnet effect
+  Shery.makeMagnet("nav ul li,svg", {});
 
-let mainText = document.querySelectorAll(".main-text");
-//* Main-text animation
-gsap.from(mainText, {
-  y: 100,
-  stagger: 0.1,
-});
-
-//* image-show on hover
-let imageView = document.querySelector(".image-show");
-let viewImage = document.querySelector(".view-image");
-
-imageView.addEventListener("mouseenter", (dets) => {
-  viewImage.style.display = "block";
-  gsap.to(viewImage, {
-    left: dets.x,
+  let mainText = document.querySelectorAll(".main-text");
+  //* Main-text animation
+  gsap.from(mainText, {
+    y: 100,
+    stagger: 0.1,
   });
-});
+
+  //* image-show on hover
+  let imageView = document.querySelector(".image-show");
+  let viewImage = document.querySelector(".view-image");
+
+  // imageView.addEventListener("mouseenter", (dets) => {
+  //   viewImage.style.display = "block";
+  //   gsap.to(viewImage, {
+  //     left: dets.x,
+  //   });
+  // });
+}
+page1();
