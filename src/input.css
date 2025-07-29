@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer components {
+  .font-roboto {
+    font-family: "Roboto", "sans-serif";
+  }
+}
+@font-face {
+  font-family: "silk";
+  src: url("../Fonts/silkserif-regularitalic-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "silk-light";
+  src: url("../Fonts/silkserif-lightitalic-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "plain-light";
+  src: url("../Fonts/silkserif-lightitalic-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "plain-regular";
+  src: url("../Fonts/plain-regular-webfont.ttf") format("truetype");
+}
+.font-plainLight {
+  font-family: "plain-light";
+}
+.font-silkLight {
+  font-family: "silk-light";
+}
+
+/** Now animation */
+@keyframes text {
+  0% {
+    font-family: "plainLight";
+    -webkit-text-stroke: 1px #fff;
+    color: black;
+  }
+  100% {
+    -webkit-text-stroke: 1px transparent;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.anime-text {
+  animation: text infinite ease-in 2s;
+}
+
+/** Text Stroke */
+ .hover\:text-stroke:hover {
+   -webkit-text-stroke: 1px white;
+   color: transparent;
+  text-decoration: none;
+  }
