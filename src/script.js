@@ -69,3 +69,27 @@ function page1() {
   // });
 }
 page1();
+
+//* Page-2
+
+//* Video
+function playVideo() {
+  let playButton = document.querySelector(".playButton");
+  let video = document.querySelector(".video");
+  playButton.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}
+playVideo();
+
+let videoContainer = document.querySelector(".videoContainer");
+videoContainer.addEventListener("mouseenter", (dets) => {
+    gsap.to("playButton", {
+      right: dets.x,
+      top: dets.y,
+    });
+  });

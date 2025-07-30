@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="overflow-x-hidden">
     <!--* Loader -->
@@ -212,8 +216,21 @@
       </div>
 
       <!--* Page-2 -->
-      <div class="page-2 h-[100dvh] w-[100dvw] bg-[#151515]">
-        
+      <div
+        class="page-2 h-[100dvh] w-[100dvw] bg-[#151515] flex items-center justify-end"
+      >
+        <div class="w-[70vw] h-[64vh] relative videoContainer">
+          <video
+            class="w-full h-full object-cover video"
+            src="../videos/Obys-Showreel-2024.mp4"
+            poster="../Images/Showreel-2022-preview-1.jpg"
+          ></video>
+          <div
+            class="playButton size-35 bg-yellow-600 rounded-[50%] flex items-center justify-center absolute top-[-13%] right-[10%]"
+          >
+            <i class="ri-play-large-fill text-3xl"></i>
+          </div>
+        </div>
       </div>
       <div class="page-3 h-[100dvh] w-[100dvw] bg-[#151515]"></div>
     </main>
