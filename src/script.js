@@ -56,19 +56,37 @@ function page1() {
     y: 100,
     stagger: 0.1,
   });
-
-  //* image-show on hover
-  let imageView = document.querySelector(".image-show");
-  let viewImage = document.querySelector(".view-image");
-
-  // imageView.addEventListener("mouseenter", (dets) => {
-  //   viewImage.style.display = "block";
-  //   gsap.to(viewImage, {
-  //     left: dets.x,
-  //   });
-  // });
 }
 page1();
+
+//* image-show on hover
+
+function imageMoveOnHover() {
+  let imageView = document.querySelector(".image-show");
+  let viewImage = document.querySelector(".view-image");
+  //* ImageMove
+  function imageMove(dets) {
+    gsap.to(viewImage, {
+      display: "inline-block",
+      x: dets.offsetX,
+      opacity: 1,
+    });
+  }
+
+  imageView.addEventListener("mouseenter", () => {
+    imageView.classList.remove("overflow-hidden");
+    imageView.addEventListener("mousemove", imageMove);
+  });
+  imageView.addEventListener("mouseleave", () => {
+    imageView.removeEventListener("mousemove", imageMove);
+    gsap.to(viewImage, {
+      opacity: 0,
+      top: "-200%",
+      left: "10%",
+    });
+  });
+}
+imageMoveOnHover();
 
 //* Page-2
 
@@ -86,10 +104,30 @@ function playVideo() {
 }
 playVideo();
 
-let videoContainer = document.querySelector(".videoContainer");
-videoContainer.addEventListener("mouseenter", (dets) => {
-    gsap.to("playButton", {
-      right: dets.x,
-      top: dets.y,
+//* Play Button Move
+function playButtonMove() {
+  let videoContainer = document.querySelector(".videoContainer");
+  let playButton = document.querySelector(".playButton");
+
+  //* Button Move
+  function buttonMove(dets) {
+    gsap.to(playButton, {
+      left: dets.offsetX,
+      top: dets.offsetY,
+      ease: "power2.out",
+    });
+  }
+
+  videoContainer.addEventListener("mouseenter", () => {
+    videoContainer.addEventListener("mousemove", buttonMove);
+  });
+  videoContainer.addEventListener("mouseleave", () => {
+    videoContainer.removeEventListener("mousemove", buttonMove);
+    gsap.to(playButton, {
+      left: "75%",
+      top: "-13%",
+      ease: "power2.out",
     });
   });
+}
+playButtonMove();
