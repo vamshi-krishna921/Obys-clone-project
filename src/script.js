@@ -131,3 +131,20 @@ function playButtonMove() {
   });
 }
 playButtonMove();
+
+//* Page-3
+
+//* Line Increase
+document.addEventListener("DOMContentLoaded", ()=>{
+  let line = document.querySelector(".line");
+  gsap.to(line, {
+    width: "70%",
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".page-3",
+      start: "top 50%"
+    }
+  });
+  
+})
