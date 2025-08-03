@@ -164,3 +164,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
   });
 })
+
+//* Page-5
+
+//* Line increase
+document.addEventListener("DOMContentLoaded", ()=>{
+  let line2 = document.querySelector(".line3");
+  gsap.to(line2, {
+    width: "70%",
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".page-4",
+      start: "top 50%"
+    }
+  });
+})

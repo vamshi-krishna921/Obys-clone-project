@@ -47,8 +47,12 @@
 }
 
 /** Text Stroke */
- .hover\:text-stroke:hover {
-   -webkit-text-stroke: 1px white;
-   color: transparent;
+.hover\:text-stroke:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
   text-decoration: none;
-  }
+}
+.text-stroke {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
