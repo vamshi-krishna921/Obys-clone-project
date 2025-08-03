@@ -28,6 +28,9 @@
 .font-silkLight {
   font-family: "silk-light";
 }
+.font-silk{
+  font-family: "silk";
+}
 
 /** Now animation */
 @keyframes text {
@@ -55,4 +58,49 @@
 .text-stroke {
   -webkit-text-stroke: 1px white;
   color: transparent;
+}
+
+@keyframes marquee1 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-100% - 20%));
+  }
+}
+.animate-marquee1{
+  animation: marquee1 infinite linear 12s;
+}
+@keyframes marquee2 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-100% - 6%));
+  }
+}
+.animate-marquee2{
+  animation: marquee2 infinite linear 12s;
+}
+@keyframes marquee3 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-100% - 40%));
+  }
+}
+.animate-marquee3{
+  animation: marquee3 infinite reverse linear 12s;
+}
+@keyframes marquee4 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-100% - 30%));
+  }
+}
+.animate-marquee4{
+  animation: marquee4 infinite reverse linear 12s;
 }

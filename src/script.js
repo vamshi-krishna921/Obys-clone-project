@@ -169,13 +169,28 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 //* Line increase
 document.addEventListener("DOMContentLoaded", ()=>{
-  let line2 = document.querySelector(".line3");
-  gsap.to(line2, {
+  let line3 = document.querySelector(".line3");
+  gsap.to(line3, {
     width: "70%",
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".page-4",
+      start: "top 50%"
+    }
+  });
+})
+//* page-6
+
+//* Line increase
+document.addEventListener("DOMContentLoaded", ()=>{
+  let line4 = document.querySelector(".line4");
+  gsap.to(line4, {
+    width: "70%",
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".page-6",
       start: "top 50%"
     }
   });
