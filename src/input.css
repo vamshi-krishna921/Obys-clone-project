@@ -60,6 +60,10 @@
   color: transparent;
 }
 
+/**Hover font silk */
+.hover\:font-silk:hover {
+    font-family: "silk";
+  }
 @keyframes marquee1 {
   0%{
     transform: translateX(0);

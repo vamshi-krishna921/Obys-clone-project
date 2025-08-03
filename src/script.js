@@ -1,5 +1,46 @@
 let main = document.querySelector(".main");
+document.addEventListener("DOMContentLoaded", () => {
+  LocomotiveScroll();
+});
 
+//*Locomotive
+function initLocomotiveScroll() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".main"),
+    smooth: true
+  });
+
+  // Sync with ScrollTrigger
+  locoScroll.on("scroll", ScrollTrigger.update);
+
+  ScrollTrigger.scrollerProxy(".main", {
+    scrollTop(value) {
+      return arguments.length
+        ? locoScroll.scrollTo(value, 0, 0)
+        : locoScroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    },
+    pinType: document.querySelector(".main").style.transform
+      ? "transform"
+      : "fixed"
+  });
+
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  ScrollTrigger.refresh();
+}
+document.addEventListener("DOMContentLoaded", initLocomotiveScroll);
+
+
+//* Loader animation
 function loaderAnimation() {
   let tl = gsap.timeline();
 
@@ -35,15 +76,17 @@ loaderAnimation();
 
 //* Cursor animation
 function cursorAnimation() {
-  main.addEventListener("mousemove", (dets) => {
+  window.addEventListener("mousemove", (dets) => {
     gsap.to(".cursor", {
       x: dets.x,
       y: dets.y,
       duration: 0.2,
+      ease: "power2.out",
     });
   });
 }
 cursorAnimation();
+
 
 //*Page-1
 function page1() {
@@ -111,6 +154,8 @@ function playButtonMove() {
 
   //* Button Move
   function buttonMove(dets) {
+    let cursor = document.querySelector(".cursor");
+    cursor.style.display = "none";
     gsap.to(playButton, {
       left: dets.offsetX,
       top: dets.offsetY,
@@ -123,6 +168,8 @@ function playButtonMove() {
   });
   videoContainer.addEventListener("mouseleave", () => {
     videoContainer.removeEventListener("mousemove", buttonMove);
+    let cursor = document.querySelector(".cursor");
+    cursor.style.display = "block";
     gsap.to(playButton, {
       left: "75%",
       top: "-13%",
@@ -143,6 +190,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".page-3",
+      scroller: ".main",
       start: "top 50%"
     }
   });
@@ -160,6 +208,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".page-4",
+      scroller: ".main",
       start: "top 50%"
     }
   });
@@ -176,6 +225,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".page-4",
+      scroller: ".main",
       start: "top 50%"
     }
   });
@@ -191,6 +241,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".page-6",
+      scroller: ".main",
       start: "top 50%"
     }
   });
