@@ -9,7 +9,7 @@ function initLocomotiveScroll() {
 
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
-    smooth: true
+    smooth: true,
   });
 
   // Sync with ScrollTrigger
@@ -26,19 +26,18 @@ function initLocomotiveScroll() {
         top: 0,
         left: 0,
         width: window.innerWidth,
-        height: window.innerHeight
+        height: window.innerHeight,
       };
     },
     pinType: document.querySelector(".main").style.transform
       ? "transform"
-      : "fixed"
+      : "fixed",
   });
 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
 }
 document.addEventListener("DOMContentLoaded", initLocomotiveScroll);
-
 
 //* Loader animation
 function loaderAnimation() {
@@ -86,7 +85,6 @@ function cursorAnimation() {
   });
 }
 cursorAnimation();
-
 
 //*Page-1
 function page1() {
@@ -182,7 +180,7 @@ playButtonMove();
 //* Page-3
 
 //* Line Increase
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   let line = document.querySelector(".line");
   gsap.to(line, {
     width: "70%",
@@ -191,16 +189,58 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollTrigger: {
       trigger: ".page-3",
       scroller: ".main",
-      start: "top 50%"
-    }
+      start: "top 50%",
+    },
   });
-})
+});
+
+//* Shery Js Image on hover
+function imageShery() {
+  Shery.imageEffect(".image-div", {
+    style: 4,
+    config: {
+      uColor: { value: false },
+      uSpeed: { value: 0.6, range: [0.1, 1], rangep: [1, 10] },
+      uAmplitude: { value: 1.5, range: [0, 5] },
+      uFrequency: { value: 3.5, range: [0, 10] },
+      geoVertex: { range: [1, 64], value: 32 },
+      zindex: { value: -9996999, range: [-9999999, 9999999] },
+      aspect: { value: 0.7272749932567818 },
+      ignoreShapeAspect: { value: true },
+      shapePosition: { value: { x: 0, y: 0 } },
+      shapeScale: { value: { x: 0.5, y: 0.5 } },
+      shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+      shapeRadius: { value: 0, range: [0, 2] },
+      currentScroll: { value: 0 },
+      scrollLerp: { value: 0.07 },
+      gooey: { value: true },
+      infiniteGooey: { value: false },
+      growSize: { value: 4, range: [1, 15] },
+      durationOut: { value: 1, range: [0.1, 5] },
+      durationIn: { value: 1.5, range: [0.1, 5] },
+      displaceAmount: { value: 0.5 },
+      masker: { value: true },
+      maskVal: { value: 1, range: [1, 5] },
+      scrollType: { value: 0 },
+      noEffectGooey: { value: true },
+      onMouse: { value: 0 },
+      noise_speed: { value: 0.2, range: [0, 10] },
+      metaball: { value: 0.43, range: [0, 2] },
+      discard_threshold: { value: 0.5, range: [0, 1] },
+      antialias_threshold: { value: 0, range: [0, 0.1] },
+      noise_height: { value: 0.5, range: [0, 2] },
+      noise_scale: { value: 10, range: [0, 100] },
+    },
+    gooey: true,
+  });
+}
+imageShery();
 
 //* Page-4
 
 //* Line increase
 
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   let line2 = document.querySelector(".line2");
   gsap.to(line2, {
     width: "70%",
@@ -209,15 +249,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollTrigger: {
       trigger: ".page-4",
       scroller: ".main",
-      start: "top 50%"
-    }
+      start: "top 50%",
+    },
   });
-})
+});
 
 //* Page-5
 
 //* Line increase
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   let line3 = document.querySelector(".line3");
   gsap.to(line3, {
     width: "70%",
@@ -226,14 +266,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollTrigger: {
       trigger: ".page-4",
       scroller: ".main",
-      start: "top 50%"
-    }
+      start: "top 50%",
+    },
   });
-})
+});
 //* page-6
 
 //* Line increase
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   let line4 = document.querySelector(".line4");
   gsap.to(line4, {
     width: "70%",
@@ -242,7 +282,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     scrollTrigger: {
       trigger: ".page-6",
       scroller: ".main",
-      start: "top 50%"
-    }
+      start: "top 50%",
+    },
   });
-})
+});

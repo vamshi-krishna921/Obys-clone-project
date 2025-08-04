@@ -108,3 +108,17 @@
 .animate-marquee4{
   animation: marquee4 infinite reverse linear 12s;
 }
+/** Circle animation */
+.circle-out:hover .circle-in{
+  scale: 1;
+}
+.circle-out:hover .circle-in p{
+  scale: 1;
+}
+
+
+/**Shery js image*/
+._canvas_container{
+  z-index: 999999 !important;
+  pointer-events: none;
+}
