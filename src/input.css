@@ -122,3 +122,8 @@
   z-index: 999999 !important;
   pointer-events: none;
 }
+/** Font visible on hover */
+.hover-font{
+  opacity: 1 !important;
+  visibility: visible !important;
+}

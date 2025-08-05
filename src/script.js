@@ -286,3 +286,26 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+
+//* Textillate js code on hover
+let hoverText = document.querySelector(".hover-font");
+
+$(hoverText).textillate({
+  autoStart: false, // Don't auto-play on load
+  in: {
+    effect: 'fadeIn'
+  }
+});
+$(hoverText).textillate('in');
+hoverText.addEventListener("mouseenter", () => {
+  hoverText.classList.add("text-stroke");
+
+  //* Restart the animation from the beginning
+  $(hoverText).textillate('stop');
+  $(hoverText).textillate('start');
+});
+
+hoverText.addEventListener("mouseleave", () => {
+  hoverText.classList.remove("text-stroke");
+});
+
