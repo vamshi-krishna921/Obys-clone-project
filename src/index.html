@@ -68,14 +68,14 @@
     <main class="main text-white bg-[#151515]" id="main" data-scroll-container>
       <!--*Page-1 -->
 
-      <div class="page-1 h-[100dvh] w-[100dvw] bg-[#151515]" data-scroll>
+      <div class="page-1 h-[70dvh] md:h-[100dvh] w-[100dvw] bg-[#151515]" data-scroll>
         <!--* Header Nav -->
 
-        <header class="w-[100%] h-[7vw] px-[5vw] py-[4vw]">
+        <header class="md:w-[100%] h-[10vh] md:h-[7vw] px-[8vw] py-[6vw] md:px-[5vw] md:py-[4vw]">
           <nav
-            class="flex items-center justify-between w-[100%] h-[100%] relative"
+            class="md:flex md:items-center md:justify-between w-[100%] h-[100%] relative "
           >
-            <ul class="flex items-center justify-center gap-[3vw]">
+            <ul class="w-[100%] h-[100%] flex justify-between items-center md:w-[10%] md:flex md:items-center md:justify-center md:gap-[3vw]">
               <svg
                 class="menu-opener__square"
                 width="12"
@@ -165,12 +165,12 @@
                 ></path>
               </svg>
             </ul>
-            <ul class="flex items-center justify-center gap-[3vw] font-[20px]">
+            <ul class="hidden md:flex md:items-center md:justify-center md:gap-[3vw] md:font-[20px]">
               <li>Work</li>
               <li>About</li>
               <li>Contacts</li>
             </ul>
-            <h5 class="absolute left-[25%] top-[20%] leading-4">
+            <h5 class="hidden md:absolute md:left-[25%] md:top-[20%] md:leading-4 md:block">
               Obys— <br />
               Creative <br />
               Design <br />
@@ -182,16 +182,16 @@
         <!--* Center section -->
 
         <div
-          class="w-[100%] h-[70dvh] flex items-center justify-center mt-13 gap-[5vw]"
+          class="w-[100%] h-[70dvh] flex items-center justify-start ml-[3vw] md:justify-center mt-13 gap-[5vw]"
         >
-          <div class="h-[80%] text-[4dvw] font-plainLight"><h1>01</h1></div>
+          <div class="md:h-[80%] h-[70%] text-[7vh] md:text-[4dvw] font-plainLight"><h1>01</h1></div>
           <div
-            class="font-semibold text-[8dvw] leading-[7.3vw] uppercase relative z-10"
+            class="font-semibold text-[10vw] md:text-[8dvw] leading-[7.5dvh] md:leading-[7.3vw] uppercase relative z-10 -ml-[9vw] md:-ml-0"
           >
-            <div class="relative z-10 overflow-hidden">
+            <div class="relative z-10 overflow-hidden ">
               <div class="overhid main-text">We design</div>
             </div>
-            <div class="relative z-10 overflow-hidden">
+            <div class="relative z-10 overflow-hidden ">
               <div class="overflow-hidden main-text">unique</div>
             </div>
             <div class="relative image-show overflow-hidden">
@@ -200,7 +200,7 @@
                 alt="Hover Flag"
                 class="absolute opacity-0 w-[20vw] h-[55vh] left-[10%] z-0 view-image transform -translate-x-1/2 -translate-y-1/2"
               />
-              <div class="relative main-text">
+              <div class="relative main-text ">
                 <span class="hover:text-stroke underline relative z-10"
                   >web</span
                 >
@@ -210,7 +210,7 @@
                 >
               </div>
             </div>
-            <div class="relative z-10 overflow-hidden">
+            <div class="relative z-10 overflow-hidden ">
               <div class="overhid main-text">experience</div>
             </div>
           </div>
