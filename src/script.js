@@ -318,4 +318,3 @@ hoverText.addEventListener("mouseenter", () => {
 hoverText.addEventListener("mouseleave", () => {
   hoverText.classList.remove("text-stroke");
 });
-
