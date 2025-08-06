@@ -222,14 +222,14 @@
       <div
         class="page-2 h-[100dvh] w-[100dvw] bg-[#151515] flex items-center justify-end"
        data-scroll data-scroll-speed ="-2">
-        <div class="w-[70vw] h-[64vh] relative videoContainer">
+        <div class="w-[100dvw] md:w-[70vw] h-[64vh] relative videoContainer">
           <video
             class="w-full h-full object-cover video"
             src="../videos/Obys-Showreel-2024.mp4"
             poster="../Images/Showreel-2022-preview-1.jpg"
           ></video>
           <div
-            class="playButton size-35 bg-yellow-600 rounded-[50%] flex items-center justify-center absolute top-[-0%] left-[75%] transform -translate-x-1/2 -translate-y-1/2"
+            class="playButton hidden size-35 bg-yellow-600 rounded-[50%] md:flex items-center justify-center absolute top-[-0%] left-[75%] transform -translate-x-1/2 -translate-y-1/2"
           >
             <i class="ri-play-large-fill text-3xl"></i>
           </div>
@@ -238,23 +238,23 @@
 
       <!--* Page-3 -->
 
-      <div class="page-3 min-h-[100vh] w-[100dvw] bg-[#151515] relative pb-[20vw]" data-scroll>
+      <div class="page-3 min-h-[100vh] w-[100dvw] bg-[#151515] relative md:pb-[20vw] pb-[10vh]" data-scroll>
         <div
-          class="h-[30vh] w-full text-[4dvw] gap-[5vw] flex justify-center items-center relative line-container"
+          class="ml-[3vw] md:ml-0 md:border-none border-b-2 border-white h-[20dvh] md:h-[30vh] w-full text-[4dvw] gap-[0.6vw] md:gap-[5vw] flex md:flex-row flex-col justify-center items-start md:items-center relative line-container"
         >
           <h1 class="font-plainLight">02</h1>
-          <h1 class="uppercase font-semibold text-[8dvw]">our projects</h1>
+          <h1 class="uppercase font-semibold text-[10dvw] md:text-[8vw]">our projects</h1>
           <div
-            class="w-[0%] h-0.5 bg-white absolute bottom-0 right-0 line"
+            class="w-full md:w-[0%] h-0.5 bg-white absolute bottom-0 right-0 line hidden md:block"
           ></div>
         </div>
 
         <!--* Image container -->
-        <div class="image-container px-[5vw] py-[4vh]  flex flex-wrap gap-[2vw]">
+        <div class="image-container px-[5vw] py-[4vh] flex flex-wrap gap-[2vw]">
           <!--*Image1 -->
-          <div class="w-[26%] min-w-[260] h-[34vw]">
-            <h1 class="text-[3vw] font-semibold uppercase">Olga Prudka</h1>
-            <div class="image-div w-[100%] min-w-[300px] h-[34vw]  relative overflow-hidden shrink-0 mb-10">
+          <div class="md:w-[26%] md:min-w-[260px] md:h-[34vw] h-[60vh] w-[80vw] md:my-0 my-[5vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase">Olga Prudka</h1>
+            <div class="image-div w-[100%] min-w-[300px] md:h-[34vw] h-full  relative overflow-hidden shrink-0 mb-10">
             <img src="../Images/Olga_Prudka_1.png" alt="" class="w-full h-full object-cover">
             <img src="../Images/Olga_Prudka_2.png" alt="" class="w-full h-full object-cover">
             </div>
@@ -264,8 +264,8 @@
             </div>
           </div>
           <!--*Image2 -->
-          <div class="w-[36%] min-w-[360px] h-[40vw] ">
-            <h1 class="text-[3vw] font-semibold uppercase">aim</h1>
+          <div class="md:w-[36%] md:min-w-[360px] md:h-[40vw] h-[60vh] w-[80vw] md:my-0 my-[8vh] md:mt-0 mt-[15vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase">aim</h1>
           <div class="image-div relative overflow-hidden shrink-0 mb-10">
             <img src="../Images/AIM-1.png" alt="" class="w-full h-full object-cover">
             <img src="../Images/AIM-2.png" alt="" class="w-full h-full object-cover">
@@ -276,7 +276,7 @@
             </div>
           </div>
           <!--*Circle1 -->
-          <div class="w-[30%] min-w-[300px] aspect-[3/4] relative overflow-hidden shrink-0 mb-10 flex items-end justify-center mt-36">
+          <div class="w-[30%] min-w-[300px] hidden aspect-[3/4] relative overflow-hidden shrink-0 mb-10 md:flex items-end justify-center mt-36">
             <div class="circle-out relative w-[80%] aspect-square rounded-full border border-white flex items-center justify-center">
               <svg class="w-1/3 h-1/3  text-white" viewBox="0 0 91 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"/>
@@ -287,7 +287,7 @@
             </div> 
           </div>
           <!--*Circle2 -->
-          <div class="w-[30%] min-w-[300px] aspect-[3/4] -ml-10 -mt-[6vw] relative overflow-hidden shrink-0 mb-10 flex items-start justify-center">
+          <div class="w-[30%] min-w-[300px] aspect-[3/4] -ml-10 -mt-[6vw] relative overflow-hidden shrink-0 mb-10 md:flex hidden items-start justify-center">
             <div class="circle-out relative w-[80%] aspect-square rounded-full border border-white flex items-center justify-center">
               <svg class="w-1/3 h-1/3 -rotate-[45deg]  text-white" viewBox="0 0 91 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"/>
@@ -298,8 +298,8 @@
             </div> 
           </div>
            <!--*Image3 -->
-           <div class=" w-[30%] min-w-[300px] h-[40vw]">
-            <h1 class="text-[3vw] font-semibold uppercase mt-[10vw]">ochi</h1>
+           <div class="md:w-[30%] md:min-w-[300px] md:h-[40vw] h-[60vh] w-[80vw] md:my-0 my-[5vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase mt-[10vw]">ochi</h1>
             <div class="image-div relative overflow-hidden shrink-0 mt-[0vw]  mb-[3vw]">
               <img src="../Images/OCHI.png" alt="" class="w-full h-full object-cover">
               <img src="../Images/OCHI_2-1.png" alt="" class="w-full h-full object-cover">
@@ -310,8 +310,8 @@
             </div>
           </div>
           <!--*Image-4 -->
-          <div class="w-[35%] min-w-[350px] h-[40vw]">
-            <h1 class="text-[3vw] font-semibold uppercase">David Laxer</h1>
+          <div class="md:w-[35%] md:min-w-[350px] md:h-[40vw] h-[60vh] w-[80vw] md:my-0 my-[5vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase">David Laxer</h1>
               <div class="image-div relative overflow-hidden shrink-0 mt-[0vw]  mb-10">
                 <img src="../Images/Laxer_1-2.png" alt="" class="w-full h-full object-cover">
                 <img src="../Images/Laxer_2.png" alt="" class="w-full h-full object-cover">
@@ -322,8 +322,8 @@
             </div>
           </div>
           <!--* Image5 -->
-          <div class=" w-[26%] min-w-[260] h-[34vw]">
-            <h1 class="text-[3vw] font-semibold uppercase mb-[7vw]">eminente</h1>
+          <div class="md:w-[26%] md:min-w-[260px] md:h-[34vw] h-[60vh] w-[80vw] md:my-0 my-[5vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase mb-[7vw]">eminente</h1>
               <div class="image-div -mt-[6vw] relative overflow-hidden shrink-0 mb-10">
                 <img src="../Images/Éminente_First.png" alt="" class="w-full h-full object-cover">
                 <img src="../Images/Éminente_Second.png" alt="" class="w-full h-full object-cover">
@@ -334,7 +334,7 @@
             </div>
           </div>
           <!--* Circle3 -->
-          <div class="w-[30%] min-w-[300px] aspect-[3/4] -ml-10 relative overflow-hidden shrink-0 mb-10 flex items-end justify-center mt-36">
+          <div class="w-[30%] min-w-[300px] aspect-[3/4] -ml-10 relative overflow-hidden shrink-0 mb-10 md:flex hidden items-end justify-center mt-36">
             <div class="circle-out relative w-[80%] aspect-square rounded-full border border-white flex items-center justify-center">
               <svg class="w-1/3 h-1/3 -rotate-[90deg]  text-white" viewBox="0 0 91 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"/>
@@ -345,8 +345,8 @@
             </div> 
           </div>
           <!--* Image6 -->
-          <div class="w-[36%] min-w-[360px] h-[40vw]">
-            <h1 class="text-[3vw] font-semibold uppercase mt-[15vw]">makhno</h1>
+          <div class="md:w-[36%] md:min-w-[360px] md:h-[40vw] h-[60vh] w-[80vw] md:my-0 my-[5vh] px-[3vw] md:px-0">
+            <h1 class="md:text-[3vw] text-2xl font-semibold uppercase mt-[15vw]">makhno</h1>
               <div class="image-div  relative overflow-hidden shrink-0  mb-10">
                 <img src="../Images/Makhno_First.png" alt="" class="w-full h-full object-cover">
                 <img src="../Images/Makhno_Hover.png" alt="" class="w-full h-full object-cover">
@@ -364,18 +364,18 @@
 
       <div class="page-4 min-h-[60vh] w-full bg-[#151515] relative" data-scroll>
         <div
-          class="h-[30vh] w-full text-[4dvw] gap-[5vw] flex justify-center items-center relative"
+          class="ml-[3vw] md:ml-0 md:border-none border-b-2 border-white h-[20dvh] md:h-[30vh] w-full text-[4dvw] gap-[0.6vw] md:gap-[5vw] flex md:flex-row flex-col items-start justify-center md:items-center relative"
         >
           <h1 class="font-plainLight">03</h1>
-          <h1 class="uppercase font-semibold text-[8dvw]">about obys</h1>
+          <h1 class="uppercase font-semibold text-[10dvw] md:text-[8vw]">about obys</h1>
           <div
-            class="w-[0%] h-0.5 bg-white absolute bottom-0 right-0 line2"
+            class="md:w-[0%] h-0.5 bg-white absolute bottom-0 right-0 hidden md:block line2"
           ></div>
         </div>
         <div class="w-full flex flex-col justify-top mt-10 items-center gap-5">
-          <div class="w-[40%]">
-            <div class="w-[70%]">
-              <p class="font-bold text-[2.2vw] leading-9">
+          <div class="md:w-[40%] w-[100vw] md:px-0 px-[5vw]">
+            <div class="md:w-[70%] w-[90%]">
+              <p class="md:font-bold font-semibold md:text-[2.2vw] text-2xl md:leading-9">
                 Our agency is about people who love creating, designing and
                 developing wow projects. In the same time we are a boutique
                 agency that is more than the collective. We learn and grow, win
@@ -384,16 +384,16 @@
             </div>
           </div>
           <div
-            class="w-1/2 h-[80vh] flex flex-row justify-center items-center mt-6 gap-5 relative"
+            class="w-full md:w-1/2 h-[80vh] flex md:flex-row flex-col justify-center items-center mt-[10vh] md:mt-6 gap-5 relative"
           >
-            <div class="w-[60%] h-full">
+            <div class="md:w-[60%] w-[100%] h-full">
               <img
                 src="../Images/About us image.jpg"
                 alt=""
                 class="w-full h-full object-cover"
               />
             </div>
-            <div class="w-[36%] h-full flex flex-col gap-6 font-semibold">
+            <div class="md:w-[36%] w-[80%] h-full flex flex-col gap-3.5 md:gap-6 font-semibold md:-ml-0 -ml-[6vh]">
               <p>
                 We are happy to present our new website and updated version of
                 Obys agency. As before we are open for new projects worldwide!
@@ -407,12 +407,12 @@
           <!--* Blue Box -->
 
           <div
-            class="px-2 py-15 flex items-center justify-center bg-[#3F7DF4] flex-col w-[35vw] h-[78vh] text-[#f7f7f7] relative left-[14%] -mt-[30vh]"
+            class="px-2 py-5 md:py-15 flex items-center justify-center bg-[#3F7DF4] flex-col w-[90dvw] h-[78vh] md:w-[35vw] md:h-[78vh] text-[#f7f7f7] md:relative left-0 md:left-[14%] mt-[18vw] md:-mt-[30vh]"
           >
             <div
               class="flex items-center justify-center border-b border-white w-[80%] h-[15vh]"
             >
-              <h4 class="text-[1.8vw] w-[100%]">Awwwards x16</h4>
+              <h4 class="md:text-[1.8vw] text-[2.7vw] w-[100%]">Awwwards x16</h4>
               <p class="font-semibold w-[70%]">
                 OTM, SOTD and Honrable Mentions
               </p>
@@ -420,19 +420,19 @@
             <div
               class="flex items-center justify-center border-b border-white w-[80%] h-[15vh]"
             >
-              <h4 class="text-[1.8vw] w-[100%]">Red Dot Award x1</h4>
+              <h4 class="md:text-[1.8vw] text-[2.7vw] w-[100%]">Red Dot Award x1</h4>
               <p class="font-semibold w-[70%]">Best of the Best</p>
             </div>
             <div
               class="flex items-center justify-center border-b border-white w-[80%] h-[15vh]"
             >
-              <h4 class="text-[1.8vw] w-[100%]">FWA x11</h4>
+              <h4 class="md:text-[1.8vw] text-[2.7vw] w-[100%]">FWA x11</h4>
               <p class="font-semibold w-[70%]">FWA of The Day</p>
             </div>
             <div
               class="flex items-center justify-center border-b border-white w-[80%] h-[15vh]"
             >
-              <h4 class="text-[1.8vw] w-[100%]">CSSDA x23</h4>
+              <h4 class="md:text-[1.8vw] text-[2.7vw] w-[100%]">CSSDA x23</h4>
               <p class="font-semibold w-[70%]">
                 WOTM, WOTD and UI, UX, Innovation
               </p>
@@ -440,24 +440,24 @@
             <div
               class="flex items-center justify-center border-b border-white w-[80%] h-[15vh]"
             >
-              <h4 class="text-[1.8vw] w-[100%]">Behance x25</h4>
+              <h4 class="md:text-[1.8vw] text-[2.7vw] w-[100%]">Behance x25</h4>
               <p class="font-semibold w-[70%]">Interaction, Graphic Design</p>
             </div>
           </div>
         </div>
 
         <!--* We work with -->
-        <div class="mt-[15vh] w-[100%] h-[5vh] relative">
+        <div class="md:mt-[15vh] md:border-none border-b-3 border-white mt-[0vh] w-[100%] h-[5vh] relative">
           <div
-            class="w-[0%] h-0.5 bg-white line3 absolute bottom-0 right-10"
+            class="w-[0%] h-0.5 bg-white line3 absolute bottom-0 right-10 md:block hidden"
           ></div>
-          <p class="absolute left-[27%] -bottom-10">We work with</p>
+          <p class="absolute md:left-[27%] left-[6%] -bottom-10">We work with</p>
         </div>
       </div>
 
       <!--* Page-5 -->
 
-      <div class="page-5 h-[100dvh] w-[100dvw] bg-[#151515] pt-30 leading-22 py-10" data-scroll>
+      <div class="page-5 md:h-[100dvh] w-[100dvw] bg-[#151515] pt-30 md:leading-22 md:py-10 py-4" data-scroll>
         <div class="whitespace-nowrap animate-marquee1">
           <h1 class="uppercase text-[7vw] text-stroke font-semibold inline-block">sprots - <span class="italic font-silk text-stroke">Technology</span> - fashion -</h1>
           <h1 class="uppercase text-[7vw] text-stroke font-semibold inline-block">sprots - <span class="font-silk text-stroke">Technology</span> - fashion -</h1>

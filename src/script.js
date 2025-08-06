@@ -144,6 +144,16 @@ function playVideo() {
   });
 }
 playVideo();
+//*Mobile video play
+let videoContainer = document.querySelector(".videoContainer");
+let video = document.querySelector(".video");
+videoContainer.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
 
 //* Play Button Move
 function playButtonMove() {
